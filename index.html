@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Baby Safe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url("logo_baby_safe_otimizado.jpg") no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s ease;
+      position: relative;
+    }
+
+    .overlay {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 40px;
+      background: linear-gradient(45deg, #4CAF50, #76d76d);
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+      letter-spacing: 2px;
+    }
+
+    .gif-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gif-container img {
+      width: 80px;
+      margin: 0 20px;
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 300px; /* Botões mais abaixo */
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 25px;
+      border: 1px solid #4CAF50;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    footer {
+      background-color: rgba(76, 175, 80, 0.9);
+      padding: 15px 10px;
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .top-buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .top-buttons .btn-small {
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #FF5722;
+      border: 2px solid #FF5722;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    }
+
+    .top-buttons .btn-small:hover {
+      background-color: #E64A19;
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .top-buttons .btn-small:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-buttons">
+    <a href="login.html"><button class="btn-small">Login</button></a>
+    <a href="cliente_baba.html"><button class="btn-small">Cadastrar</button></a>
+  </div>
+
+  <div class="overlay">
+    <h1>
+      <div class="gif-container">
+        <img src="bebe_esquerda.gif" alt="Bebê Esquerda">
+        <span><strong>Bem-vindo ao Baby Safe</strong></span>
+        <img src="bebe_direita.gif" alt="Bebê Direita">
+      </div>
+    </h1>
+
+    <div class="buttons-container">
+      <a href="planos.html"><button class="btn">Planos</button></a>
+      <a href="contato.html"><button class="btn">Contato</button></a>
+      <a href="quem_somos.html"><button class="btn">Leia mais sobre nós</button></a>
+    </div>
+
+    <footer>
+      Baby Safe® - 2025. Todos os direitos reservados. <br>
+      <a href="https://www.babysafe.com.br" target="_blank">Visite nosso site</a>
+    </footer>
+  </div>
+
+</body>
+</html>
+
